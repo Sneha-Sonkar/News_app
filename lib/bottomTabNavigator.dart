@@ -27,15 +27,16 @@ class _BottomNavigationBarExampleState
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Searchbar(),
-    // Text(
-    //   'Index 0: Home',
-    //   style: optionStyle,
-    // ),
     Text(
       'Index 1: Business',
       style: optionStyle,
     ),
+    
+    // Text(
+    //   'Index 0: Home',
+    //   style: optionStyle,
+    // ),
+    Searchbar(),
     // Text(
     //   'Index 2: School',
     //   style: optionStyle,

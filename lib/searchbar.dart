@@ -18,7 +18,7 @@ class _MyAppState extends State<Searchbar> {
         brightness: isDark ? Brightness.dark : Brightness.light);
 
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      // debugShowCheckedModeBanner: false,
       theme: themeData,
       home: Scaffold(
         appBar: AppBar(title: const Text('Enter the News Topic')),
@@ -37,21 +37,21 @@ class _MyAppState extends State<Searchbar> {
                 controller.openView();
               },
               leading: const Icon(Icons.search),
-              trailing: <Widget>[
-                Tooltip(
-                  message: 'Change brightness mode',
-                  child: IconButton(
-                    isSelected: isDark,
-                    onPressed: () {
-                      setState(() {
-                        isDark = !isDark;
-                      });
-                    },
-                    icon: const Icon(Icons.wb_sunny_outlined),
-                    selectedIcon: const Icon(Icons.brightness_2_outlined),
-                  ),
-                )
-              ],
+              // trailing: <Widget>[
+              //   Tooltip(
+              //     message: 'Change brightness mode',
+              //     child: IconButton(
+              //       isSelected: isDark,
+              //       onPressed: () {
+              //         setState(() {
+              //           isDark = !isDark;
+              //         });
+              //       },
+              //       icon: const Icon(Icons.wb_sunny_outlined),
+              //       selectedIcon: const Icon(Icons.brightness_2_outlined),
+              //     ),
+              //   )
+              // ],
             );
           }, suggestionsBuilder:
                   (BuildContext context, SearchController controller) {
