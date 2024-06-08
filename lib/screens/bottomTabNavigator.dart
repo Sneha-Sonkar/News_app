@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/searchbar.dart';
-import 'package:news_app/settings.dart';
+import 'package:news_app/screens/home/home.dart';
+import 'package:news_app/screens/search/searchbar.dart';
+import 'package:news_app/screens/settings/settings.dart';
 
 class BottomNavigationBarExampleApp extends StatelessWidget {
   const BottomNavigationBarExampleApp({super.key});
@@ -27,20 +28,8 @@ class _BottomNavigationBarExampleState
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    
-    // Text(
-    //   'Index 0: Home',
-    //   style: optionStyle,
-    // ),
+    Home(),
     Searchbar(),
-    // Text(
-    //   'Index 2: School',
-    //   style: optionStyle,
-    // ),
     Settings()
   ];
 

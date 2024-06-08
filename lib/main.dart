@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/bottomTabNavigator.dart';
-import 'package:news_app/searchbar.dart';
+import 'package:news_app/screens/bottomTabNavigator.dart';
+import 'package:news_app/screens/search/searchbar.dart';
 
 /// Flutter code sample for [SearchBar].
 
