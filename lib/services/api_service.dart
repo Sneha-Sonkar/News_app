@@ -13,7 +13,11 @@ class ApiService {
       final jsonResponse = json.decode(response.body);
 
       final List<dynamic> articlesJson = jsonResponse['articles'];
-      return articlesJson.map((json) => Article.fromJson(json)).toList();
+      return articlesJson
+          .map((json) => Article.fromJson(json))
+          .where((article) =>
+              article.urlToImage != null && article.urlToImage!.isNotEmpty)
+          .toList();
     } else {
       throw Exception("Failed to load articke");
     }

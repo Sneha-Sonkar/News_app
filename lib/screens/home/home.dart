@@ -52,8 +52,9 @@ class _ArticleListScreenState extends State<ArticleListScreen> {
               itemBuilder: (context, index) {
                 final article = snapshot.data![index];
                 return ListTile(
+                  leading: Image.network(article.urlToImage ?? ""),
                   title: Text('${index.toString()} ${article.title ?? ""}'),
-                  subtitle: Text(article.description ?? ""),
+                  subtitle: Text(article.urlToImage ?? ""),
                   onTap: () {
                     // Handle article tap
                   },
